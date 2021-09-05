@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnleashedToMintsoftStockSync", "UnleashedToMintsoftStockSync\UnleashedToMintsoftStockSync.csproj", "{DF88A841-151E-465F-86C5-06B72F1E359F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF88A841-151E-465F-86C5-06B72F1E359F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF88A841-151E-465F-86C5-06B72F1E359F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF88A841-151E-465F-86C5-06B72F1E359F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF88A841-151E-465F-86C5-06B72F1E359F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7B9BCDF-5B80-4FF5-93D9-58CE31B72126}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,30 @@
+--Written 13/07/2021--
+
+
+Hello!
+
+This file is used for the program to read in useful information that might change over time, things like a mintsoft username and password are needed for everything to run smoothly.
+
+You can open the keys.json file with notepad and it will look something like this: 
+[
+  {
+  "MintsoftUsername": "example@example.com",
+  "MintsoftPassword": "mintsoft password",
+  "MintsoftAPIKey": "bunch of letters and numbers",
+  "UnleashedAPIId": "bunch of letters and numbers",
+  "UnleashedAPIKey": "even bigger bunch of letters and numbers"
+}
+]
+
+All of this worked when I wrote this, but you may have to make changes in the future, here is where you get the info:
+
+MintsoftUsername - this program "logs" into mintsoft in order to make changes and so it needs a valid username and password. These are the same that you'd use to log in to the website.
+
+MintsoftPassword - as above.
+
+MintsoftAPIKey - this is sort of like a password, if you're not comfortable making API calls I'd recommend emailing mintsoft and asking if they can provide you with the API of the user that you entered above. I HIGHLY recommend making the user API Static, the details are at the bottom of this page or again you can ask when you ask them. This means the API won't change for the life of the user, otherwise you'll have to change this value a lot.
+https://support.mintsoft.co.uk/hc/en-us/articles/360027638872-API-Dynamic-Authentication
+
+UnleashedAPIId - This is located in Unleashed in the "Integrations - > Unleashed API Access" page.
+
+UnleashedAPIKey - This is located in Unleashed in the "Integrations - > Unleashed API Access" page.

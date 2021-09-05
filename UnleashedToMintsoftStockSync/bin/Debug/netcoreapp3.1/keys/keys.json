@@ -1,0 +1,9 @@
+[
+  {
+  "MintsoftUsername": "mintsoft account email",
+  "MintsoftPassword": "mintsoft account password",
+  "MintsoftAPIKey": "mintsoft API",
+  "UnleashedAPIId": "unleashed API ID",
+  "UnleashedAPIKey": "unleashed API Key"
+}
+]
