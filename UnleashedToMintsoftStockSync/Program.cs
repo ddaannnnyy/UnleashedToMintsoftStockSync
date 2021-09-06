@@ -37,8 +37,14 @@ namespace UnleashedToMintsoftStockSync
         static void Main(string[] args)
         {
             Program p = new Program();
-            //LoadJson(); //loads API variables from the keys.json file
-            LoadHardCode();
+            
+            //Here we are reading in the key values from keys.json.
+            //If you are having problems reading values you can set them as hardcodes in the LoadHardCore() method.
+            //Only enable one of these options
+            LoadJson(); //loads API variables from the keys.json file
+            //LoadHardCode(); //This method exists if you're having a problem loading the key values from the keys.json file, the values can be hardcoded in the method below.
+            
+            
             DateTime startTime = DateTime.Now; //start timer for process, allows the total runtime to be collected and displayed/logged.
             Console.WriteLine("=======");
             Console.WriteLine("MINTSOFT API KEY: " + APIKEY); //displays Mintsoft key being used for mintsoft calls
@@ -61,6 +67,9 @@ namespace UnleashedToMintsoftStockSync
 
         }
 
+        ///<summary>
+        ///This is a fallback method which you can enable in the Main() method. Values can be added here as hardcodes if you cannot use the keys.json reading LoadJson() for any reason. Remember to only have one of these options enabled in Main()
+        ///</summary>
         public static void LoadHardCode()
         {
             Console.WriteLine("keys set to hardcode");
@@ -71,7 +80,7 @@ namespace UnleashedToMintsoftStockSync
             UNLEASHEDSECRET = "unleashed API Key"; //unleashed API Key
         }
         /// <summary>
-        /// This fetches data such as API Keys, and Usernames / Passwords from the keys.json file.
+        /// This fetches data such as API Keys, and Usernames / Passwords from the keys.json file. If you are having a problem reading from this file see LoadHardCode() which will let you hardcode values as a fallback. Only enable one of these methods in the Main()
         /// </summary>
         public static void LoadJson()
         {
